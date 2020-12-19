@@ -5,8 +5,8 @@ services:
             dockerfile: ./docker/web.Dockerfile
             context: ./../
             args:
-                - MIR_WWW_PATH=${MIR_WWW_PATH}
-                - MIR_DOMAIN_NAME=${MIR_DOMAIN_NAME}
+                - MIR_WWW_PATH=/config/www/miwifiradio/
+                - MIR_DOMAIN_NAME=192.168.1.132
         image: miradio-web
         container_name: miradio-web
         env_file:
@@ -23,7 +23,7 @@ services:
             - "81:80"
         environment:
             - PMA_ARBITRARY=1
-            - PMA_HOST=${MYSQL_HOST}
+            - PMA_HOST=192.168.1.132
         restart: always
         depends_on:
             - mysqldb
@@ -37,9 +37,9 @@ services:
         env_file:
             - ".env"
         environment:
-            - MYSQL_DATABASE=${MYSQL_DATABASE}
-            - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
-            - MYSQL_USER=${MYSQL_USER}
-            - MYSQL_PASSWORD=${MYSQL_PASSWORD}
+            - MYSQL_DATABASE=miradio
+            - MYSQL_ROOT_PASSWORD=root
+            - MYSQL_USER=dev
+            - MYSQL_PASSWORD=dev
         ports:
             - "3306:3306"
