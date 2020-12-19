@@ -5,7 +5,6 @@ ARG MIR_SSL_ENABLED
 ENV MIR_WWW_PATH=$MIR_WWW_PATH
 RUN apk update
 RUN apk add ffmpeg
-RUN mkdir -p $MIR_WWW_PATH
 WORKDIR $MIR_WWW_PATH
 ADD ./ ./
 RUN mkdir -p uploads/playing
