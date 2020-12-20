@@ -1,4 +1,4 @@
-FROM richarvey/nginx-php-fpm:1.3.10
+FROM cyben76/fm:miradio-web
 ARG MIR_WWW_PATH
 ARG MIR_DOMAIN_NAME
 ARG MIR_SSL_ENABLED
