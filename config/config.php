@@ -1,12 +1,12 @@
 <?php
 if (!defined("_KATE_MAIN")) die("You have no access to this file");
-    $dbhost = getenv('MYSQL_HOST');
-    $dbuname = getenv('MYSQL_USER');
-    $dbpass = getenv('MYSQL_PASSWORD');
-    $dbname = getenv('MYSQL_DATABASE');
-    $global_path = getenv('MIR_WWW_PATH');
+    $dbhost ="192.168.1.132";
+    $dbuname ="dev";
+    $dbpass ="dev";
+    $dbname ="miradio";
+    $global_path ="/usr/share/nginx/html";
     $ffbin = "ffmpeg";
-    $domain = getenv('MIR_DOMAIN_NAME');
+    $domain ="192.168.1.132";
     // Sync with Master - send your playlist to masterserver
     $sync=0;
     $master_host="ximiraga.ru";
