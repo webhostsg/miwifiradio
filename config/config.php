@@ -4,7 +4,7 @@ if (!defined("_KATE_MAIN")) die("You have no access to this file");
     $dbuname ="dev";
     $dbpass ="dev";
     $dbname ="miradio";
-    $global_path ="/usr/share/nginx/html";
+    $global_path ="/config/www/miwifiradio";
     $ffbin = "ffmpeg";
     $domain ="192.168.1.132";
     // Sync with Master - send your playlist to masterserver
