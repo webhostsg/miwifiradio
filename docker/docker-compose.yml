@@ -37,9 +37,9 @@ services:
         env_file:
             - ".env"
         environment:
-            - MYSQL_DATABASE=${MYSQL_DATABASE}
-            - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
-            - MYSQL_USER=${MYSQL_USER}
-            - MYSQL_PASSWORD=${MYSQL_PASSWORD}
+            - MYSQL_DATABASE="miradio"
+            - MYSQL_ROOT_PASSWORD="root"
+            - MYSQL_USER="dev"
+            - MYSQL_PASSWORD="dev"
         ports:
             - "3306:3306"
