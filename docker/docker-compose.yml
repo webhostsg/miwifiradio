@@ -5,7 +5,7 @@ services:
             dockerfile: ./docker/web.Dockerfile
             context: ./../
             args:
-                - MIR_WWW_PATH=/config/www/miwifiradio/
+                - MIR_WWW_PATH=/var/www/html/miwifiradio/
                 - MIR_DOMAIN_NAME=192.168.1.132
         image: miradio-web
         container_name: miradio-web
