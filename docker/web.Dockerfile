@@ -1,4 +1,4 @@
-FROM richarvey/nginx-php-fpm
+FROM bitnami/php-fpm
 ARG MIR_WWW_PATH
 ARG MIR_DOMAIN_NAME
 ARG MIR_SSL_ENABLED
