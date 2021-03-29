@@ -17,7 +17,7 @@ services:
         depends_on:
             - mysqldb
     myadmin:
-        image: phpmyadmin/phpmyadmin
+        image: arm64v8/phpmyadmin:latest
         container_name: miradio-phpmyadmin
         ports:
             - "81:80"
